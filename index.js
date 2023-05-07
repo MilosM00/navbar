@@ -7,15 +7,15 @@ let hamburger = true;
 const hamburgerTrue = () =>{
     hamburgerButton.classList.remove("fa-bars");
     hamburgerButton.classList.add("fa-times");
-    hamburgerUl.style.display = "flex";
-    setTimeout(() => { hamburgerUl.style.opacity = "1"; }, 10);
+    hamburgerUl.style.visibility = "visible";
+    hamburgerUl.style.opacity = "1";
     hamburger = false;
 };
 
 const hamburgerFalse = () =>{
     hamburgerButton.classList.add("fa-bars");
     hamburgerButton.classList.remove("fa-times");
-    setTimeout(() => { hamburgerUl.style.display = "none"; }, 500);
+    hamburgerUl.style.visibility = "hidden"
     hamburgerUl.style.opacity = "0";
     hamburger = true;
 };
